@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>AskMyNotes</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+ <div class="bg-white max-w-md w-full rounded-2xl shadow-lg p-6 space-y-4">
+ <header class="text-center">
+ <h1 class="text-3xl font-bold text-gray-800">AskMyNotes</h1>
+ <p class="text-sm text-gray-500">Ask questions about your notes</p>
+ </header>
+ <input type="text" id="question"
+ class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focu
+s:ring-blue-400"
+ placeholder="Type your question..." />
+ <input type="file" id="notes" accept=".txt,.pdf"
+ class="w-full text-sm text-gray-600" />
+ <button id="submit"
+ class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg">
+ Ask
+ </button>
+ <div id="output"
+ class="border border-gray-200 rounded-lg p-4 text-gray-700 bg-gray-50 min-h-[80px]">
+ Answer will appear here...
+ </div>
+</body>
+</html>
